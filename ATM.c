@@ -32,7 +32,7 @@
                         printf("Invalid amount, please enter positive number\n");
                     }else{
                         balance -= amount;
-                        printf("Successfully withdrawn %.2f. Remaining balance %.2f\n",amount,balance);
+                        printf("Successfully withdrawn %.2f. Remaining balance: %.2f\n",amount,balance);
                     }
                     break;
             case 4: printf("Thank you for using our ATM. Goodbye!\n");
