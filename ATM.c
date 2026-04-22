@@ -15,6 +15,7 @@
             case 1: printf("Your current balance: %.2f\n",balance);
                     break;
             case 2: printf("Enter amount to deposit:\n");
+                    scanf("%f",&amount);
                     if(amount>0){
                         balance+=amount;
                         printf("Successfully deposited %.2f. New balance: $%.2f\n",amount,balance);
@@ -24,12 +25,13 @@
                     }
                     break;
             case 3: printf("Enter amount to withdraw:\n");
+                    scanf("%f",&amount);
                     if(amount>balance){
                         printf("Insufficient funds!. You only have %.2f",balance);
                     }else if(amount<=0){
                         printf("Invalid amount, please enter positive number\n");
                     }else{
-                        amount -= balance;
+                        balance -= amount;
                         printf("Successfully withdrawn %.2f. Remaining balance %.2f\n",amount,balance);
                     }
                     break;
