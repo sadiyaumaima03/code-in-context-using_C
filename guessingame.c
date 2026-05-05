@@ -19,4 +19,6 @@
             }
         }
         printf("Guessed correctly : %d\n",secret);
+        printf("GoodBye!!\n");
+    return 0;
     }
